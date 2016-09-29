@@ -8,7 +8,7 @@ echo ""
 
 #Users on this machine
 echo -e "***** USERS ON THIS MACHINE *****"
-ls -al /home/
+ls -al /Users/
 echo ""
 
 # - Network interfaces and IP 
@@ -28,7 +28,7 @@ echo ""
 
 # -Free and used memory in the system:
 echo -e "***** FREE AND USED MEMORY *****"
-free -m
+top -l 1 -s 0 |grep PhysMem
 echo ""
 
 # -System uptime and load:
